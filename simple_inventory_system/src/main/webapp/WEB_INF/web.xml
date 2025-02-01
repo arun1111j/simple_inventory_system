@@ -5,6 +5,10 @@
          version="3.0">
 
     <!-- SignUpServlet Configuration -->
+    <welcome-file-list>
+    	<welcome-file>Sign_Up</welcome-file>
+    
+    </welcome-file-list>
     <servlet>
         <servlet-name>SignUp_servlet</servlet-name>
         <servlet-class>simple_inventory_system.SignUp_servlet</servlet-class>
