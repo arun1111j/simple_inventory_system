@@ -7,7 +7,11 @@ RUN rm -rf /usr/local/tomcat/webapps/ROOT
 # Copy your WAR file to Tomcat webapps directory
 COPY target/simple_inventory_system-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
 
-# Expose port 8080 for web access
+# Set environment variables
+ENV PORT=8080
+ENV DATABASE_URL=simple_inventory_system_db
+
+# Expose the dynamic port
 EXPOSE 8080
 
 # Start Tomcat
